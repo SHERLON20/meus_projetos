@@ -32,7 +32,7 @@ def main(pagina):
     campo_de_usuario= ft.TextField(label="escreva seu nome no chat",on_submit=entrar_chat)
     botao_entrar = ft.ElevatedButton("entrar no chat",on_click=entrar_chat)
     janela=ft.AlertDialog(title=titulo_janela,content=campo_de_usuario,actions=[botao_entrar])
-    titulo=ft.Text('hashzap')
+    titulo=ft.text("aperte o botão para iniciar o chat")
     pagina.add(titulo)
     botao_iniciar = ft.ElevatedButton('iniciar chat',on_click=iniciar_chat)
     pagina.add(botao_iniciar)
